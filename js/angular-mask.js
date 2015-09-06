@@ -1,5 +1,5 @@
-angular.module("mask", []);
-angular.module("mask").directive('mask', ['$timeout', 'maskService', function($timeout, maskService) {
+angular.module("ngGenericMask", []);
+angular.module("ngGenericMask").directive('mask', ['$timeout', 'maskService', function($timeout, maskService) {
    return {
      require: 'ngModel',
      scope: {
@@ -22,7 +22,7 @@ angular.module("mask").directive('mask', ['$timeout', 'maskService', function($t
       }
    };
 }]);
-angular.module("mask").factory("maskService", [function () {
+angular.module("ngGenericMask").factory("maskService", [function () {
     var _otherCharacters = /[^0-9]/g;
 
     var _applyMask = function (string, mask) {

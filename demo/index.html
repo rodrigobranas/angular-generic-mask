@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+<head>
+	<meta charset="UTF-8">
+	<title>Mask Example</title>
+	<script src="../lib/angular.js"></script>
+	<script src="../js/angular-mask.js"></script>
+	<script>
+		angular.module("demo", ["ngGenericMask"]);
+		angular.module("demo").controller("demoController", function ($scope) {
+			$scope.date = "10102010";
+			$scope.cpf = "79774571649";
+			$scope.cnpj = "112223330000100";
+			$scope.cep = "88100800";
+			$scope.telephone = "4899999999";
+		});
+	</script>
+</head>
+<body ng-controller="demoController">
+	<p>Date Mask XX/XX/XXXX</p>
+	<input type="text" ng-model="date" mask="XX/XX/XXXX XX:XX"/><br/>
+	<p>CPF Mask XXX.XXX.XXX-XX</p>
+	<input type="text" ng-model="cpf" mask="XXX.XXX.XXX-XX"/><br/>
+	<p>CNPJ Mask XX.XXX.XXX/XXXX-XX</p>
+	<input type="text" ng-model="cnpj" mask="XX.XXX.XXX/XXXX-XX"/><br/>
+	<p>CEP Mask XXXXX-XXX</p>
+	<input type="text" ng-model="cep" mask="XXXXX-XXX"/><br/>
+	<p>Telephone Mask (XX) XXXX-XXXX</p>
+	<input type="text" ng-model="telephone" mask="(XX) XXXX-XXXX"/><br/>
+</body>
+</html>
+
+
+
