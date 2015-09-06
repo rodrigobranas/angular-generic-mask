@@ -1,2 +1,2 @@
-# branas-angular-mask
-AngularJS native generic masking project
+# angular-generic-mask
+AngularJS native generic mask
