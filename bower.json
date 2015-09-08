@@ -1,0 +1,24 @@
+{
+  "name": "angular-generic-mask",
+  "version": "1.0.0",
+  "homepage": "https://github.com/rodrigobranas/angular-generic-mask",
+  "authors": [
+    "Rodrigo Branas <rodrigo.branas@gmail.com>"
+  ],
+  "description": "generic mask for AngularJS",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "latest"
+  },
+  "devDependencies": {}
+}
